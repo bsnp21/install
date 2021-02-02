@@ -3,6 +3,17 @@
 
 
 
+
+#AWS create instances
+# Ubuntu Server 20.04 LTS (HVM), SSD Volume Type - ami-0885b1f6bd170450c (64-bit x86) / ami-054e49cb26c2fd312 (64-bit Arm)
+# 6. Configure Security Group
+#    Inbound rules for sg-0cccdf3b13fe95ce6 (Selected security groups: sg-0cccdf3b13fe95ce6)
+#    Type Protocol  Port Range  Source  Description
+#    All TCP TCP  0 - 65535 0.0.0.0/0
+#    All TCP   TCP 0 - 65535   ::/0
+#    SSH
+
+
 sudo apt-get update
 
 sudo apt-get install apache2
