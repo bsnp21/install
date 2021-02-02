@@ -11,7 +11,7 @@ else
     exit
 fi
 
-cd ${ROOTDIR}
+cd ~
 
 
 #sudo git clone https://github.com/bsnp21/install.git
@@ -24,5 +24,5 @@ SvrIP=`dig +short myip.opendns.com @resolver1.opendns.com`
 echo ${SvrIP}
 
 SRC="./home/index.html" 
-TARGF="../../../index.htm" 
+TARGF="${SRC}" 
 sed -E 's|'[0-9]+.[0-9]+.[0-9]+.[0-9]+'|'"${SvrIP}"'|g'  ${SRC} > ${TARGF}
