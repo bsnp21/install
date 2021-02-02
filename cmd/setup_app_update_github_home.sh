@@ -4,10 +4,10 @@
 
 ROOTDIR="/var/www/html"
 
-if [ -f "${ROOTDIR}" ]; then
-    echo "${ROOTDIR} exists."
+if [ -f "$ROOTDIR" ]; then
+    echo "$ROOTDIR exists."
 else 
-    echo "${ROOTDIR}} does not exist."
+    echo "$ROOTDIR does not exist."
     exit
 fi
 
