@@ -7,6 +7,7 @@ cd wdaws
 sudo git clone https://github.com/wdingbox/ham12.git
 sudo git clone https://github.com/wdingbox/bible_concordance.git
 sudo git clone https://github.com/wdingbox/bible_obj_lib.git
+sudo git clone https://github.com/bsnp21/install.git
 #git clone https://github.com/wdingbox/bible_obj_usr.git
 #git clone https://github.com/wdingbox/hebrew_ciu.git
 
