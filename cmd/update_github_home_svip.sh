@@ -44,4 +44,4 @@ sudo -S  git commit -m "auto update svip=$SvrIP"
 sudo -S  git push
 
 cd ~
-#sudo rm -rf home
+sudo -S rm -rfv home
