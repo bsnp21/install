@@ -13,3 +13,8 @@
 
 
 ./setup_pm2_auto_restart.sh
+
+
+
+SvrIP=`dig +short myip.opendns.com @resolver1.opendns.com`
+echo SvrIP=${SvrIP}
