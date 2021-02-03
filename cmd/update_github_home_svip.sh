@@ -20,7 +20,7 @@ if [ -d "home" ]; then
 else 
     echo "home does not exist."
     #sudo git clone https://github.com/bsnp21/install.git
-    sudo git clone https://github.com/bsnp21/home.git
+    sudo git clone https://bsnp21:3edcFDSA@github.com/bsnp21/home.git
     exit
 fi
 
@@ -37,3 +37,12 @@ sed -E 's|'[0-9]+[\.][0-9]+[\.][0-9]+[\.][0-9]+'|'$SvrIP'|g'  ${SRC}
 sed -E 's|'[0-9]+[\.][0-9]+[\.][0-9]+[\.][0-9]+'|'$SvrIP'|g'  ${SRC} > ${TMP}
 
 sudo cp -vf ${TMP} ${SRC}
+
+
+cd ~/home
+sudo -S add *
+sudo -S commit -m "auto update svip=$SvrIP"
+sudo -S push
+
+cd ~
+#sudo rm -rf home
