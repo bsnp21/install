@@ -25,4 +25,4 @@ echo ${SvrIP}
 
 SRC="./home/index.html" 
 TARGF="${SRC}" 
-sudo -S sed -E 's|'[0-9]+.[0-9]+.[0-9]+.[0-9]+'|'"${SvrIP}"'|g'  ${SRC} > ${TARGF}
+sudo -S sed -E 's|'[0-9]+.[0-9]+.[0-9]+.[0-9]+'|'"${SvrIP}"'|g'  ${SRC} > tmp.htm
