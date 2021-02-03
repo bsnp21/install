@@ -39,9 +39,9 @@ sudo cp -vf ${TMP} ${SRC}
 
 
 cd ~/home
-sudo -S add *
-sudo -S commit -m "auto update svip=$SvrIP"
-sudo -S push
+sudo -S  git add *
+sudo -S  git commit -m "auto update svip=$SvrIP"
+sudo -S  git push
 
 cd ~
 #sudo rm -rf home
