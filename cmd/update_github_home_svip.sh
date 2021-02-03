@@ -32,6 +32,8 @@ SvrIP=`dig +short myip.opendns.com @resolver1.opendns.com`
 echo SvrIP=${SvrIP}
 
 SRC="./home/index.html" 
-TARGF="${SRC}" 
+TMP="tmp.htm" 
 sed -E 's|'[0-9]+.[0-9]+.[0-9]+.[0-9]+'|'"${SvrIP}"'|g'  ${SRC} 
-sed -E 's|'[0-9]+.[0-9]+.[0-9]+.[0-9]+'|'"${SvrIP}"'|g'  ${SRC} > tmp.htm
+sed -E 's|'[0-9]+.[0-9]+.[0-9]+.[0-9]+'|'"${SvrIP}"'|g'  ${SRC} > ${TMP}
+
+sudo cp -vf ${TMP} ${SRC}
