@@ -21,7 +21,6 @@ else
     echo "home does not exist."
     #sudo git clone https://github.com/bsnp21/install.git
     sudo git clone https://bsnp21:3edcFDSA@github.com/bsnp21/home.git
-    exit
 fi
 
 
