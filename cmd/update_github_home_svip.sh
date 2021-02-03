@@ -11,18 +11,26 @@ else
     exit
 fi
 
+
+
 cd ~
 
+if [ -d "~/home" ]; then
+    echo "home exists."
+else 
+    echo "~/home does not exist."
+    #sudo git clone https://github.com/bsnp21/install.git
+    sudo git clone https://github.com/bsnp21/home.git
+    exit
+fi
 
-#sudo git clone https://github.com/bsnp21/install.git
-sudo git clone https://github.com/bsnp21/home.git
 
 
 
 #dig +short myip.opendns.com @resolver1.opendns.com 
 SvrIP=`dig +short myip.opendns.com @resolver1.opendns.com`
-echo ${SvrIP}
+echo SvrIP=${SvrIP}
 
 SRC="./home/index.html" 
 TARGF="${SRC}" 
-sudo -S sed -E 's|'[0-9]+.[0-9]+.[0-9]+.[0-9]+'|'"${SvrIP}"'|g'  ${SRC} > tmp.htm
+sed -E 's|'[0-9]+.[0-9]+.[0-9]+.[0-9]+'|'"${SvrIP}"'|g'  ${SRC} > tmp.htm
