@@ -3,6 +3,8 @@
 
 cd /var/www/html/wdaws/ham12/utility/ndjs/weindjs_restapi
 
+pm2 delete 0
+
 pm2 startup
 #
 #  [PM2] Init System found: systemd
