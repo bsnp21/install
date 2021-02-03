@@ -33,4 +33,5 @@ echo SvrIP=${SvrIP}
 
 SRC="./home/index.html" 
 TARGF="${SRC}" 
+sed -E 's|'[0-9]+.[0-9]+.[0-9]+.[0-9]+'|'"${SvrIP}"'|g'  ${SRC} 
 sed -E 's|'[0-9]+.[0-9]+.[0-9]+.[0-9]+'|'"${SvrIP}"'|g'  ${SRC} > tmp.htm
