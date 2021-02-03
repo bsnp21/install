@@ -15,10 +15,10 @@ fi
 
 cd ~
 
-if [ -d "~/home" ]; then
+if [ -d "home" ]; then
     echo "home exists."
 else 
-    echo "~/home does not exist."
+    echo "home does not exist."
     #sudo git clone https://github.com/bsnp21/install.git
     sudo git clone https://github.com/bsnp21/home.git
     exit
