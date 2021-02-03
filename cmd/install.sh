@@ -9,7 +9,7 @@
 
 ./setup_app_mkdir.sh
 
-./setup_app_update_github_home.sh
+./update_github_home_svip.sh
 
 
 ./setup_pm2_auto_restart.sh
