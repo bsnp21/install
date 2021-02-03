@@ -33,7 +33,7 @@ echo SvrIP=${SvrIP}
 
 SRC="./home/index.html" 
 TMP="tmp.htm" 
-sed -E 's|'[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+'|'"${SvrIP}"'|g'  ${SRC} 
-sed -E 's|'[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+'|'"${SvrIP}"'|g'  ${SRC} > ${TMP}
+sed -E 's|'[0-9]+[\.][0-9]+[\.][0-9]+[\.][0-9]+'|'$SvrIP'|g'  ${SRC} 
+sed -E 's|'[0-9]+[\.][0-9]+[\.][0-9]+[\.][0-9]+'|'$SvrIP'|g'  ${SRC} > ${TMP}
 
 sudo cp -vf ${TMP} ${SRC}
