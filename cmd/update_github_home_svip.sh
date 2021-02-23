@@ -64,7 +64,7 @@ function Update_github_bsnp21_home(){
 
 
 
-
+################################################################
 
 if [  -z "$1"  ]; then
     echo "github bsnp21 password is missiong!"
