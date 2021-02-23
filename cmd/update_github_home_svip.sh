@@ -25,8 +25,8 @@ function Generate_IP_Config_File(){
     #sed -E 's|'[0-9]+[\.][0-9]+[\.][0-9]+[\.][0-9]+'|'$SvrIP'|g'  ${SRC} > ${TMP}
     #sudo cp -vf ${TMP} ${SRC}
     cd ~/home
-    ls -al
     sudo -S chmod 777 -R *
+    ls -al
     CONFIGFILE="js/config.js"
     ##CONFIGFILE="/tmp/tst.js"
     CONFIGSTR="var config={master_port:7778, master_ip:'${SvrIP}', service_ip:'${SvrIP}'}"
