@@ -27,7 +27,7 @@ function Generate_IP_Config_File(){
     ##CONFIGFILE="/tmp/tst.js"
     CONFIGSTR="var config={master_port:7778, master_ip:'${SvrIP}', service_ip:'${SvrIP}'}"
     echo ${CONFIGSTR} 
-    sudo -S echo ${CONFIGSTR} > ${CONFIGFILE}
+    echo '' | sudo -S echo ${CONFIGSTR} > ${CONFIGFILE}
 }
 function Clone_github_bsnp21_home(){
     cd ~
