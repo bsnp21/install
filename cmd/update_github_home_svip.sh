@@ -25,7 +25,7 @@ function Generate_IP_Config_File(){
     echo ${CONFIGSTR} 
     echo ${CONFIGSTR} > ${CONFIGFILE}
 }
-function Update_github_bsnp21_home(){
+function Update_github_bsnp21_home(PASSWORD){
     cd ~
     
     if [ -d "home" ]; then
@@ -67,6 +67,6 @@ else
     exit
 fi
 
-Update_github_bsnp21_home
+Update_github_bsnp21_home PASSWORD
 Generate_IP_Config_File
-Update_github_bsnp21_home
+Update_github_bsnp21_home PASSWORD
