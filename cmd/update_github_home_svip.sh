@@ -67,6 +67,6 @@ else
     exit
 fi
 
-Update_github_bsnp21_home PASSWORD
+Update_github_bsnp21_home 
 Generate_IP_Config_File
-Update_github_bsnp21_home PASSWORD
+Update_github_bsnp21_home 
