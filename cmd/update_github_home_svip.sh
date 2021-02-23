@@ -51,7 +51,7 @@ function Update_github_bsnp21_home(){
     sudo -S  git push
     
     cd ~
-    #sudo -S rm -rf home
+    sudo -S rm -rf home
 }
 
 
