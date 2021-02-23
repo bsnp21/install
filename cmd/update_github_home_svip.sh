@@ -39,7 +39,7 @@ function Clone_github_bsnp21_home(){
         eval password="$1"
         giturl="https://bsnp21:${PASSWORD}@github.com/bsnp21/home.git"
         echo "'home' dir does not exist. git clone ${giturl}"
-        echo '' | sudo -S git clone 'https://bsnp21:${PASSWORD}@github.com/bsnp21/home.git'
+        echo '' | sudo -S git clone "https://bsnp21:${PASSWORD}@github.com/bsnp21/home.git"
         echo $giturl
         echo $PASSWORD
     fi
