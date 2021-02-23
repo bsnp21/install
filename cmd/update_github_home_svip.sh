@@ -4,6 +4,9 @@
 dig +short myip.opendns.com @resolver1.opendns.com
 
 
+PASSWORD="$1"
+echo "bsnp21 password:" ${PASSWORD}
+
 
 function Generate_IP_Config_File(){
     #dig +short myip.opendns.com @resolver1.opendns.com 
@@ -34,8 +37,10 @@ function Update_github_bsnp21_home(){
         echo "'home' dir does not exist."
         #sudo git clone https://github.com/bsnp21/install.git
         eval password="$1"
-        giturl="https://bsnp21:'${password}'@github.com/bsnp21/home.git"
-        sudo -S git clone 'https://bsnp21:${password}@github.com/bsnp21/home.git'
+        giturl="https://bsnp21:${PASSWORD}@github.com/bsnp21/home.git"
+        sudo -S git clone 'https://bsnp21:${PASSWORD}@github.com/bsnp21/home.git'
+        echo $giturl
+        echo $PASSWORD
     fi
     
     
@@ -51,8 +56,6 @@ function Update_github_bsnp21_home(){
 
 
 
-PASSWORD=$1
-echo "bsnp21 password:" ${PASSWORD}
 
 if [  -z "$1"  ]; then
     echo "github bsnp21 password is missiong!"
