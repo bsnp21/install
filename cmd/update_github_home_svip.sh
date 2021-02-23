@@ -26,7 +26,7 @@ function Generate_IP_Config_File(){
     #sudo cp -vf ${TMP} ${SRC}
     cd ~/home
     ls -al
-    sudo -S chmod 777 js
+    sudo -S chmod 777 -R *
     CONFIGFILE="js/config.js"
     ##CONFIGFILE="/tmp/tst.js"
     CONFIGSTR="var config={master_port:7778, master_ip:'${SvrIP}', service_ip:'${SvrIP}'}"
