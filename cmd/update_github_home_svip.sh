@@ -9,8 +9,7 @@ echo "bsnp21 password:" ${PASSWORD}
 
 
 function Generate_IP_Config_File(){
-    cd ~/home
-    ls -al
+   
     #dig +short myip.opendns.com @resolver1.opendns.com 
     SvrIP=`dig +short myip.opendns.com @resolver1.opendns.com`
     echo SvrIP=${SvrIP}
@@ -25,6 +24,9 @@ function Generate_IP_Config_File(){
     #sed -E 's|'[0-9]+[\.][0-9]+[\.][0-9]+[\.][0-9]+'|'$SvrIP'|g'  ${SRC} 
     #sed -E 's|'[0-9]+[\.][0-9]+[\.][0-9]+[\.][0-9]+'|'$SvrIP'|g'  ${SRC} > ${TMP}
     #sudo cp -vf ${TMP} ${SRC}
+    cd ~/home
+    ls -al
+    sudo -S chmod 777 js
     CONFIGFILE="config.js"
     ##CONFIGFILE="/tmp/tst.js"
     CONFIGSTR="var config={master_port:7778, master_ip:'${SvrIP}', service_ip:'${SvrIP}'}"
