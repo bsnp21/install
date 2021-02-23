@@ -34,7 +34,7 @@ function Update_github_bsnp21_home(){
         echo "'home' dir does not exist."
         #sudo git clone https://github.com/bsnp21/install.git
         giturl="https://bsnp21:'${1}'@github.com/bsnp21/home.git"
-        sudo -S git clone $giturl 
+        sudo -S git clone 'https://bsnp21:"${1}"@github.com/bsnp21/home.git'
     fi
     
     
