@@ -27,7 +27,7 @@ function Generate_IP_Config_File(){
     ##CONFIGFILE="/tmp/tst.js"
     CONFIGSTR="var config={master_port:7778, master_ip:'${SvrIP}', service_ip:'${SvrIP}'}"
     echo ${CONFIGSTR} 
-    echo ${CONFIGSTR} > ${CONFIGFILE}
+    sudo -S echo ${CONFIGSTR} > ${CONFIGFILE}
 }
 function Clone_github_bsnp21_home(){
     cd ~
@@ -70,9 +70,9 @@ fi
 ROOTDIR="/var/www/html"
 
 if [ -d "$ROOTDIR" ]; then
-    echo "$ROOTDIR exists. Noop."
+    echo "$ROOTDIR exists."
 else 
-    echo "$ROOTDIR dir does not exist."
+    echo "$ROOTDIR dir does not exist. Cannot update."
     exit
 fi
 
