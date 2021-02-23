@@ -24,7 +24,7 @@ function Generate_IP_Config_File(){
     echo ${CONFIGSTR} 
     echo ${CONFIGSTR} > ${CONFIGFILE}
 }
-function Update_bsnp_github(){
+function Update_github_bsnp21_home(){
     cd ~
     
     if [ -d "home" ]; then
@@ -60,4 +60,4 @@ fi
 
 
 Generate_IP_Config_File
-Update_bsnp_github
+Update_github_bsnp21_home
