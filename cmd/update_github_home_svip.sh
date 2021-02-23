@@ -47,6 +47,9 @@ function Clone_github_bsnp21_home(){
 }
 function Update_github_bsnp21_home(){
     cd ~/home
+    more .git/config
+    more js/config.js
+
     sudo -S  git add *
     sudo -S  git commit -m "auto update svip=$SvrIP"
     sudo -S  git push
