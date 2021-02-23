@@ -9,6 +9,7 @@ echo "bsnp21 password:" ${PASSWORD}
 
 
 function Generate_IP_Config_File(){
+    cd ~/home
     #dig +short myip.opendns.com @resolver1.opendns.com 
     SvrIP=`dig +short myip.opendns.com @resolver1.opendns.com`
     echo SvrIP=${SvrIP}
