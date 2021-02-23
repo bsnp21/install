@@ -28,7 +28,7 @@ function Generate_IP_Config_File(){
     echo ${CONFIGSTR} 
     echo ${CONFIGSTR} > ${CONFIGFILE}
 }
-function Update_github_bsnp21_home(){
+function Clone_github_bsnp21_home(){
     cd ~
     
     if [ -d "home" ]; then
@@ -38,19 +38,20 @@ function Update_github_bsnp21_home(){
         eval password="$1"
         giturl="https://bsnp21:${PASSWORD}@github.com/bsnp21/home.git"
         echo "'home' dir does not exist. git clone ${giturl}"
-        sudo -S git clone 'https://bsnp21:${PASSWORD}@github.com/bsnp21/home.git'
+        echo '' | sudo -S git clone 'https://bsnp21:${PASSWORD}@github.com/bsnp21/home.git'
         echo $giturl
         echo $PASSWORD
     fi
-    
-    
+    echo
+}
+function Push_github_bsnp21_home(){
     cd ~/home
     sudo -S  git add *
     sudo -S  git commit -m "auto update svip=$SvrIP"
     sudo -S  git push
     
     cd ~
-    sudo -S rm -rf home
+    #sudo -S rm -rf home
 }
 
 
@@ -71,6 +72,6 @@ else
     exit
 fi
 
-Update_github_bsnp21_home 
+Clone_github_bsnp21_home 
 Generate_IP_Config_File
 Update_github_bsnp21_home 
