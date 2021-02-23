@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 dig +short myip.opendns.com @resolver1.opendns.com
 
 
@@ -32,7 +33,7 @@ function Update_github_bsnp21_home(){
     else 
         echo "'home' dir does not exist."
         #sudo git clone https://github.com/bsnp21/install.git
-        sudo -S git clone https://bsnp21:xyz@github.com/bsnp21/home.git
+        sudo -S git clone https://bsnp21:$1@github.com/bsnp21/home.git
     fi
     
     
@@ -46,8 +47,15 @@ function Update_github_bsnp21_home(){
 }
 
 
-Generate_IP_Config_File
 
+
+
+echo "bsnp21 password:" $1
+
+if [  -z "$1"  ]; then
+    echo "github bsnp21 password is missiong!"
+    exit
+fi
 
 ROOTDIR="/var/www/html"
 
