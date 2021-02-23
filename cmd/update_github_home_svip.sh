@@ -34,10 +34,10 @@ function Update_github_bsnp21_home(){
     if [ -d "home" ]; then
         echo "home exists."
     else 
-        echo "'home' dir does not exist."
         #sudo git clone https://github.com/bsnp21/install.git
         eval password="$1"
         giturl="https://bsnp21:${PASSWORD}@github.com/bsnp21/home.git"
+        echo "'home' dir does not exist. git clone ${giturl}"
         sudo -S git clone 'https://bsnp21:${PASSWORD}@github.com/bsnp21/home.git'
         echo $giturl
         echo $PASSWORD
