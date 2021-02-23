@@ -16,7 +16,8 @@ function Generate_IP_Config_File(){
     echo SvrIP=${SvrIP}
 
     if [ ! -z "${SvrIP}" -a "${SvrIP}" == "" ]; then
-        echo "SvrIP is not empty!"
+        echo "SvrIP is empty!"
+        exit
     fi
 
     #SRC="./home/index.html" 
@@ -28,7 +29,7 @@ function Generate_IP_Config_File(){
     ##CONFIGFILE="/tmp/tst.js"
     CONFIGSTR="var config={master_port:7778, master_ip:'${SvrIP}', service_ip:'${SvrIP}'}"
     echo ${CONFIGSTR} 
-    echo '' | sudo -S echo ${CONFIGSTR} > ${CONFIGFILE}
+    echo '' | sudo -S echo "${CONFIGSTR}" > ${CONFIGFILE}
 }
 function Clone_github_bsnp21_home(){
     cd ~
