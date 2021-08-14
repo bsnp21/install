@@ -17,4 +17,4 @@ sudo rm -rf /var/www/html/wdaws
 SvrIP=`dig +short myip.opendns.com @resolver1.opendns.com`
 echo SvrIP=${SvrIP}
 
-echo "please run update_github_home_svip.sh to update bsnp21."
+echo "please run update_github_home_svip.sh with PAT param to update bsnp21."

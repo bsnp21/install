@@ -67,7 +67,8 @@ function Update_github_bsnp21_home(){
 ################################################################
 
 if [  -z "$1"  ]; then
-    echo "Pleasee input password for github bsnp21!"
+    echo "Pleasee input password (Personal-Access-Token) for github bsnp21"
+    echo "https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token"
     exit
 fi
 
