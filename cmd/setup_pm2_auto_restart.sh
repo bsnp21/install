@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-cd /var/www/html/wdaws/ham12/utility/ndjs/weindjs_restapi
+cd /var/www/html/wdaws/bb/svr/restapi
 
 pm2 delete 0
 
