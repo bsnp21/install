@@ -9,7 +9,7 @@ sudo rm -rf /var/www/html/wdaws
 ./setup_app_base.sh
 ./setup_app_mkdir_workDir.sh
 
-./setup_pm2_auto_restart.sh
+./start_pm2.sh
 
 
 
