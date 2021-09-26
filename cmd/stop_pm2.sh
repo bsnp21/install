@@ -24,3 +24,5 @@ pm2 delete a.node.js
 
 
 pm2 list
+
+ps aux | grep a.node.js
