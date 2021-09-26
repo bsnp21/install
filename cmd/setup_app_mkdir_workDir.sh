@@ -13,6 +13,7 @@ sudo git clone https://github.com/wdingbox/bible_obj_lib.git
 #git clone https://github.com/wdingbox/hebrew_ciu.git
 
 #Client-Svr
+sudo git clone https://github.com/bsnp21/home.git
 sudo git clone https://github.com/bsnp21/bb.git
 #sudo cp ./ham12/utility/wdaws/*.htm ../index.html
 
