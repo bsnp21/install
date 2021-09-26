@@ -4,7 +4,7 @@
 cd /var/www/html/wdaws/bb/svr/restapi
 
 #pm2 delete 0
-pm2 delete /var/www/html/wdaws/bb/svr/restapi/a.node.js
+pm2 delete a.node.js
 
 #pm2 startup
 #
