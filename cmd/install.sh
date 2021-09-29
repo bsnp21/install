@@ -3,6 +3,8 @@
 
 
 
+./stop_pm2.sh
+
 sudo rm -rf /var/www/html/wdaws
 
 ./setup_apache.sh
