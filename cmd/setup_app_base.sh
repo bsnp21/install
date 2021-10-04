@@ -10,6 +10,7 @@ sudo apt-get install git
 sudo apt-get install npm
 sudo apt-get install nodejs
 
-sudo npm install pm2 -g
+#sudo npm install pm2 -g
+sudo npm install pm2@latest -g
 
 
