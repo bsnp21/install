@@ -1,10 +1,9 @@
 
 
-
-## cd /var/www/html  ghp=*wc
-
-
+HOSTPATH="/var/www/html"
 WKDIR="wdaws/obi"
+ 
+cd ${HOSTPATH}
 sudo mkdir -p ${WKDIR}
 cd ${WKDIR}
 
