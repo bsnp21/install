@@ -17,13 +17,9 @@ sudo git clone https://github.com/bsnp21/home.git
 sudo git clone https://github.com/bsnp21/bb.git
 #sudo cp ./ham12/utility/wdaws/*.htm ../index.html
 
-
+# install required modules for a.node.js
 cd bb/svr/restapi
 sudo ./install_node_modules.sh
-
-
-
-
 
 #############
 
