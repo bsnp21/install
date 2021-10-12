@@ -1,7 +1,7 @@
 
 
 HOSTPATH="/var/www/html"
-WKDIR="wdaws/obi"
+WKDIR="obi/data"
  
 cd ${HOSTPATH}
 sudo mkdir -p ${WKDIR}
