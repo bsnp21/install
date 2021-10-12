@@ -1,19 +1,19 @@
 
 
 
-## cd /var/www/html  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
+## cd /var/www/html  ghp=*wc
 
 
-WKDIR="wdaws"
-sudo mkdir ${WKDIR}
+WKDIR="wdaws/obi"
+sudo mkdir -p ${WKDIR}
 cd ${WKDIR}
 
 USR1="wding"
 USR2="soft"
 PWD1="ghp"
-PWD2="ENgUk3u8se"
-PWD3="mEvIzKr5Q02"
-PWD4="pOwzuvnIR3Mqg1w"
+PWD2="LESQRco71xsi6ai5"
+PWD3="wc3cx47MrB4"
+PWD4="5qA32WJKw"
 PROJ1="obimg"
 PROJ2="obronze"
 GITPATH1="github.com/${USR1}${USR2}/${PROJ1}.git"
