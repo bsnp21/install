@@ -4,8 +4,11 @@ HOSTPATH="/var/www/html"
 WKDIR="obi/data"
  
 cd ${HOSTPATH}
-sudo mkdir -p ${WKDIR}
+
+rm -rf obi
+mkdir -p ${WKDIR}
 cd ${WKDIR}
+touch index.html
 
 USR1="wding"
 USR2="soft"
