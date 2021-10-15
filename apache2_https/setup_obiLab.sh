@@ -22,11 +22,12 @@ GITPATH1="github.com/${USR1}${USR2}/${PROJ1}.git"
 #GITPATH2="github.com/${USR1}${USR2}/${PROJ2}.git"
 #base libs.
 
+GITPROJECT="https://${USR1}${USR2}:${PWD1}_${PWD2}${PWD3}${PWD4}@${GITPATH1}"
 
-echo git clone  https://${USR1}${USR2}:${PWD1}_${PWD2}${PWD3}${PWD4}@${GITPATH1}
-sudo git clone  https://${USR1}${USR2}:${PWD1}_${PWD2}${PWD3}${PWD4}@${GITPATH1}
+echo git clone  ${GITPROJECT}
+sudo git clone  ${GITPROJECT}
 
-echo rm -rf ${WKDIR}/${PROJ1}/.git
+#echo rm -rf ${WKDIR}/${PROJ1}/.git
 #sudo rm -rf ${PROJ1}/.git
 
 
