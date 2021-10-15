@@ -1,11 +1,11 @@
 
 
-HOSTPATH="/var/www/html"
+HOSTDIR="/var/www/html"
 WKDIR="obi/data"
  
-cd ${HOSTPATH}
+cd ${HOSTDIR}
 
-rm -rf obi
+rm -rf ${WKDIR}
 mkdir -p ${WKDIR}
 cd ${WKDIR}
 touch index.html
