@@ -35,6 +35,11 @@ sudo git clone https://${USR1}${USR2}:${PWD1}_${PWD2}${PWD3}${PWD4}@${GITPATH2}
 echo rm -rf ${WKDIR}/${PROJ2}/.git
 sudo rm -rf ${PROJ2}/.git
 
+
+
+
+
+
 #############
 
 
