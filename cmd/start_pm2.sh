@@ -1,10 +1,12 @@
 #!/bin/bash
 
+APP_PATH="/var/www/html/wdaws/bb/svr/restapi"
+APP_NODE="${APP_PATH}/a.node.js"
 
-cd /var/www/html/wdaws/bb/svr/restapi
+cd ${APP_PATH}
 
 #pm2 delete 0
-pm2 delete a.node.js
+pm2 delete ${APP_NODE}
 
 #pm2 startup
 #
@@ -21,10 +23,10 @@ sudo env PATH=$PATH:/usr/bin /usr/local/lib/node_modules/pm2/bin/pm2 startup sys
 pm2 list
 ps aux | grep a.node.js
 
-pm2 start /var/www/html/wdaws/bb/svr/restapi/a.node.js
-
-#pm2 save
-
+pm2 start ${APP_NODE}
 
 pm2 list
 ps aux | grep a.node.js
+
+
+#pm2 save
