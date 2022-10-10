@@ -16,6 +16,8 @@ pm2 delete a.node.js
 sudo env PATH=$PATH:/usr/bin /usr/local/lib/node_modules/pm2/bin/pm2 startup systemd -u ubuntu --hp /home/ubuntu
 
 #pm2 startup upstart
+pm2 list
+ps aux | grep a.node.js
 
 pm2 start a.node.js
 
@@ -23,5 +25,4 @@ pm2 start a.node.js
 
 
 pm2 list
-
 ps aux | grep a.node.js
