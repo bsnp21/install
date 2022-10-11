@@ -1,12 +1,27 @@
 #!/bin/bash
 
 
-cd /var/www/html/wdaws/bb/svr/restapi
+APP_WD="/var/www/html/wdaws/bb/svr/restapi"
+
+
+pm2 list
+
+ps aux | grep a.node.js
+
+
+
+cd ${APP_WD}
+
+
+
+
+
 
 pm2 delete 0
 pm2 delete a.node.js
+pm2 delete ${APP_WD}/a.node.js
 
-sudo pkill -f "/var/www/html/wdaws/bb/svr/restapi/a.node.js"
+sudo pkill -f "${APP_WD}/a.node.js"
 
 #pm2 startup
 #
