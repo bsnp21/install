@@ -4,6 +4,7 @@
 
 
 ./stop_pm2.sh
+./uninstall_pm2.sh
 
 sudo rm -rf /var/www/html/wdaws
 
