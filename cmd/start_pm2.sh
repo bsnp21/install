@@ -24,7 +24,13 @@ pm2 list
 ps aux | grep a.node.js
 
 pm2 start ${APP_NODE}
+pm2 save
 
+
+
+
+
+echo "------pm2 started-----"
 pm2 list
 ps aux | grep a.node.js
 
@@ -44,4 +50,3 @@ pm2 list
 ps aux | grep a.node.js
 
 
-#pm2 save
