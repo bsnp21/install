@@ -56,4 +56,12 @@ DirectMap4k:      126976 kB
 DirectMap2M:      921600 kB
 
 
+ubuntu@ip-172-31-87-112:~/install/cmd$ free
+              total        used        free      shared  buff/cache   available
+Mem:        1002104      330136       96960        1360      575008      524848
 
+ubuntu@ip-172-31-87-112:~/install/cmd$ free -k
+              total        used        free      shared  buff/cache   available
+Mem:        1002104      319724      107292        1360      575088      536260
+Swap:             0           0           0
+ubuntu@ip-172-31-87-112:~/install/cmd$ 
