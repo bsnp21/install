@@ -19,3 +19,6 @@ echo ${EXE_CMD}
 
 (crontab -l 2>/dev/null || true; echo "echo test_end >>crontab_test_end.log") | crontab -
 
+
+
+crontab -l 2>/dev/null
