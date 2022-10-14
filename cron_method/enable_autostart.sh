@@ -5,6 +5,8 @@ APP_NODE="${APP_PATH}/a.node.js"
 
 EXE_CMD="@reboot sleep 300 && node ${APP_NODE} > ~/a.nod.log"
 
+EXE_CMD="@reboot sleep 300 && ~/install/cron_method/start_svr.sh"
+
 echo ${EXE_CMD} 
 
 ### 
