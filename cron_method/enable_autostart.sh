@@ -9,7 +9,7 @@ echo ${EXE_CMD}
 
 ### 
 
-(crontab -l 2>/dev/null || true; echo "* * * * * echo test_start >>test_start.log") | crontab -
+(crontab -l 2>/dev/null || true; echo "* * * * * echo test_start >>crontab_test_start.log") | crontab -
 
 
 
@@ -17,7 +17,7 @@ echo ${EXE_CMD}
 
 
 
-(crontab -l 2>/dev/null || true; echo "* * * * * echo test_start >>test_start.log") | crontab -
+(crontab -l 2>/dev/null || true; echo "* * * * * echo test_end >>crontab_test_end.log") | crontab -
 
 
 
