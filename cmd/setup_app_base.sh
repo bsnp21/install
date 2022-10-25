@@ -17,4 +17,7 @@ sudo apt-get install nodejs
 sudo npm install pm2@latest -g
 sudo pm2 update
 
+sudo pm2 unstartup
+sudo pm2 startup
+
 
