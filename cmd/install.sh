@@ -9,8 +9,8 @@
 sudo rm -rf /var/www/html/wdaws
 
 ./setup_apache.sh
-./setup_app_base.sh
-./setup_app_mkdir_workDir.sh
+./setup_npm.sh
+./setup_user_app.sh
 
 ./start_pm2.sh
 
