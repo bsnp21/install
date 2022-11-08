@@ -1,6 +1,7 @@
 #!/bin/bash
 
 
+#sudo git clone https://github.com/bsnp21/home.git 
 
 
 ./stop_pm2.sh
