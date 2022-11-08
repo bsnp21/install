@@ -28,3 +28,21 @@ sudo rm -rf /usr/local/bin/node*
 sudo apt-get remove nodejs
 
 sudo apt-get remove npm
+
+
+
+#  ubuntu@ip-172-31-87-112:~/install/cmd$  node -v
+#  v10.19.0
+#  ubuntu@ip-172-31-87-112:~/install/cmd$ npm -v
+#  ERROR: npm is known not to run on Node.js v10.19.0
+#  You'll need to upgrade to a newer Node.js version in order to use this
+#  version of npm. You can find the latest version at https://nodejs.org/
+
+
+# https://askubuntu.com/questions/1382565/npm-does-not-support-node-js-v10-19-0
+# | NodeJS  | `npm --version` |
+# |---------|-----------------|
+# | Node 16 | 6.0+            |
+# | Node 14 | 4.14+           |
+# | Node 12 | 4.12+           |
+# | Node 10 | 4.9+, <6.0      |
