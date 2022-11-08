@@ -1,6 +1,21 @@
 
+sudo apt-get install npm
 
+# ubuntu@ip-172-31-87-112:~/install/cmd$ npm -v
+# 6.14.4
+# ubuntu@ip-172-31-87-112:~/install/cmd$ 
+# ubuntu@ip-172-31-87-112:~/install/cmd$ 
+# ubuntu@ip-172-31-87-112:~/install/cmd$ node -v
+# v10.19.0
+# ubuntu@ip-172-31-87-112:~/install/cmd$ 
 
+# https://askubuntu.com/questions/1382565/npm-does-not-support-node-js-v10-19-0
+# | NodeJS  | `npm --version` |
+# |---------|-----------------|
+# | Node 16 | 6.0+            |
+# | Node 14 | 4.14+           |
+# | Node 12 | 4.12+           |
+# | Node 10 | 4.9+, <6.0      |
 
 
 sudo apt-get update
@@ -10,7 +25,7 @@ npm install -g n
 
 
 sudo apt-get install npm
-sudo npm install -g npm
+#sudo npm install -g npm
 
 
 #sudo npm install pm2 -g
@@ -31,7 +46,9 @@ pm2 --version
 
 
 #install at last.
-sudo apt-get install nodejs
+# sudo apt-get install nodejs
+sudo npm -i nodejs
+sudo npm install -g npm 
 
 # sudo apt-get install git
 
