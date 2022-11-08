@@ -8,12 +8,11 @@ sudo apt-get update
 
 npm install -g n
 
-sudo apt-get install git
+
 
 sudo apt-get install npm
 sudo npm install -g npm
 
-sudo apt-get install nodejs
 
 #sudo npm install pm2 -g
 sudo npm install pm2@latest -g
@@ -31,6 +30,15 @@ node --version
 #v10.19.0
 
 pm2 --version
+
+
+#install at last.
+sudo apt-get install nodejs
+
+sudo apt-get install git
+
+
+
 # [PM2] Spawning PM2 daemon with pm2_home=/home/ubuntu/.pm2
 # [PM2] PM2 Successfully daemonized
 # 5.2.2
