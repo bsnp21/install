@@ -1,5 +1,5 @@
 
-sudo apt-get install npm
+
 
 # ubuntu@ip-172-31-87-112:~/install/cmd$ npm -v
 # 6.14.4
@@ -17,6 +17,8 @@ sudo apt-get install npm
 # | Node 12 | 4.12+           |
 # | Node 10 | 4.9+, <6.0      |
 
+
+#sudo apt-get install npm
 
 sudo apt-get update
 
@@ -39,10 +41,9 @@ sudo apt-get install npm
 sudo npm --version
 # 8.19.2
 
-node --version
+#node --version
 #v10.19.0
 
-pm2 --version
 
 
 #install at last.

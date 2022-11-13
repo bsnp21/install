@@ -4,17 +4,17 @@
 #sudo git clone https://github.com/bsnp21/install.git 
 
 
-./stop_pm2.sh
-./uninstall_pm2.sh
+#./stop_pm2.sh
+#./uninstall_pm2.sh
 
 sudo rm -rf /var/www/html/wdaws
 
 ./setup_apache.sh
-./setup_npm_node_ok.sh
-./setup_pm2.sh
+./setup_npm_node.sh
+# ./setup_pm2.sh
 ./setup_user_app.sh
 
-./start_pm2.sh
+#./start_pm2.sh
 
 
 

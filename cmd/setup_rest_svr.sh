@@ -21,6 +21,8 @@ sudo git clone https://github.com/bsnp21/bb.git
 cd bb/svr/restapi
 sudo ./install_node_modules.sh
 
+sudo ../my_systemd_startup/setup_bsnpa_service.sh
+sudo ../my_systemd_startup/setup_bsnpc_service.sh
 #############
 
 
