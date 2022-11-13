@@ -2,6 +2,7 @@
 
 
 cd /var/www/html
+sudo rm -rf wdaws
 sudo mkdir wdaws
 cd wdaws
 
