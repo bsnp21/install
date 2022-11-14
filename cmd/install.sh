@@ -13,7 +13,7 @@ sudo rm -rf /var/www/html/wdaws
 ./setup_npm.sh
 ./setup_user_app.sh
 
-./start_pm2.sh
+#./start_pm2.sh
 
 
 
