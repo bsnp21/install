@@ -32,5 +32,6 @@ gh auth status
 #   ✓ Token: *******************
   
 
-# create my-project and clone 
-gh repo create my-project --public --clone
+# upload existing git port 
+# gh repo create _gh_001 --public  --source=. --remote=upstream
+
