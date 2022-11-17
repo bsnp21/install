@@ -31,3 +31,6 @@ gh auth status
 #   ✓ Git operations for github.com configured to use https protocol.
 #   ✓ Token: *******************
   
+
+# create my-project and clone 
+gh repo create my-project --public --clone
