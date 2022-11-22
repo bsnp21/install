@@ -1,7 +1,7 @@
 
 
 #need for dual github accounter users.
-git config --global init.defaultBranch main
+
 
 
 # install gh : the github cli. 

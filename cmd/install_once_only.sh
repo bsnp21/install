@@ -10,10 +10,11 @@
 sudo rm -rf /var/www/html/wdaws
 
 ./setup_apache.sh
+./setup_git.sh
 ./setup_npm_node.sh
-# ./setup_pm2.sh
 ./setup_proj_host.sh
-./setup_rest_svr.sh
+./setup_proj_obi.sh
+./setup_proj_system_service.sh
 
 #./start_pm2.sh
 
