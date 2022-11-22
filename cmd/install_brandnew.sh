@@ -10,7 +10,7 @@
 #sudo rm -rf /var/www/html/wdaws
 
 ./setup_apache.sh
-./setup_git.sh
+
 ./setup_npm_node.sh
 ./setup_proj_host.sh
 ./setup_proj_obi.sh
