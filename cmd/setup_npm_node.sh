@@ -66,3 +66,7 @@ sudo npm install -g npm
 # npm ERR! notsup Not compatible with your version of node/npm: npm@8.19.2
 # npm ERR! notsup Required: {"node":"^12.13.0 || ^14.15.0 || >=16"}
 # npm ERR! notsup Actual:   {"npm":"7.24.2","node":"v10.19.0"}
+
+
+npm --version   #8.5.1
+node --version  #v12.22.9

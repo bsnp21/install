@@ -12,8 +12,10 @@
 ./setup_apache.sh
 
 ./setup_npm_node.sh
+
 ./setup_proj_host.sh
 ./setup_proj_obi.sh
+
 ./setup_proj_system_service.sh
 
 
