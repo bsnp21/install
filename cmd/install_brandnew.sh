@@ -4,10 +4,9 @@
 #sudo git clone https://github.com/bsnp21/install.git 
 
 
-#./stop_pm2.sh
-#./uninstall_pm2.sh
 
-#sudo rm -rf /var/www/html/wdaws
+
+# install apt-get install git 
 
 ./setup_apache.sh
 
@@ -18,6 +17,9 @@
 
 ./setup_proj_system_service.sh
 
+
+# last step: gh. prepare brwoser open: https://github.com/login/device. 
+./setup_visually_gh.sh
 
 
 
