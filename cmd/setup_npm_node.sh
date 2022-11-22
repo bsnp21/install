@@ -22,7 +22,7 @@
 
 sudo apt-get update
 
-npm install -g n
+#npm install -g n
 
 
 
