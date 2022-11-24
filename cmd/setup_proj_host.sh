@@ -3,7 +3,8 @@
 
 cd /var/www/html
 sudo rm -rf wdaws
-mkdir wdaws
+sudo mkdir wdaws
+sudo chmod 777 wdaws
 cd wdaws
 
 #base libs.
