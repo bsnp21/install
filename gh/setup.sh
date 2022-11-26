@@ -8,8 +8,24 @@
 
 sudo apt-get install gh
 
+#  ubuntu@ip-172-31-87-112:~/install/cmd$ gh --verion
+#  
+#  Command 'gh' not found, but can be installed with:
+#  
+#  sudo snap install gh       # version 2.6.0-15-g1a10fd5a, or
+#  sudo apt  install gitsome  # version 0.8.0+ds-4
+#  
+#  See 'snap info gh' for additional versions.
+
+
+sudo snap install gh
 gh --version
 gh auth --help
+
+
+# ubuntu@ip-172-31-87-112:~/install/cmd$ gh --version
+# gh version 2.6.0-15-g1a10fd5a (2022-03-16)
+# https://github.com/cli/cli/releases/latest
 
 # login 
 gh auth login 
