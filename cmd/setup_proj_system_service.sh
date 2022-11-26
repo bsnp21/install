@@ -4,14 +4,16 @@
  
 
 # install required modules for a.node.js
-cd /var/www/html/wdaws/bb/svr/restapi
-sudo ./install_node_modules.sh
+cd /var/www/html/wdaws/bb/svr/my_systemd_startup
 
-sudo ../my_systemd_startup/setup_bsnpa_service.sh
-sudo ../my_systemd_startup/setup_bsnpc_service.sh
 
-sudo ../my_systemd_startup/start_bsnpa_service.sh
-sudo ../my_systemd_startup/start_bsnpc_service.sh
+# setup_
+sudo ./setup_bsnpa_service.sh
+sudo ./setup_bsnpc_service.sh
+
+# start_
+sudo ./start_bsnpa_service.sh
+sudo ./start_bsnpc_service.sh
 #############
 
 
