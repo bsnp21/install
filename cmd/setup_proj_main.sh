@@ -20,6 +20,8 @@ git clone https://github.com/bsnp21/bb.git
 #sudo cp ./ham12/utility/wdaws/*.htm ../index.html
 
 
+cd /bb/svr/restapi
+./installinstall_node_modules.sh
 
 
 #############
