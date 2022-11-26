@@ -21,7 +21,7 @@ git clone https://github.com/bsnp21/bb.git
 
 
 cd ./bb/svr/restapi
-./installinstall_node_modules.sh
+./install_node_modules.sh
 
 
 #############
