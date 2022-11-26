@@ -8,6 +8,6 @@
 sudo rm -rf /var/www/html/wdaws
 
 
-./setup_proj_host.sh
+./setup_proj_main.sh
 ./setup_proj_obi.sh
 
