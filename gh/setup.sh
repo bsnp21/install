@@ -18,7 +18,7 @@ sudo apt-get install gh
 #  See 'snap info gh' for additional versions.
 
 
-sudo snap install gh
+#sudo snap install gh
 gh --version
 gh auth --help
 
