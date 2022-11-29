@@ -14,6 +14,8 @@ npm i gh-pages
 npm init -y 
 # modify  package.script in package.json
 sudo vi package.json #add "deploy":"gh-pages -d account"
+
+cat package.json
 npm run deploy
 
 #published site:
