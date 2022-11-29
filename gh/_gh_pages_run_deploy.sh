@@ -1,6 +1,8 @@
 
 
 
+
+## Only works for public repo.
 echo reponame=$1
 
 git clone https://github.com/bsnpghrepolist/$1.git
@@ -16,3 +18,5 @@ npm run deploy
 
 #published site:
 echo https://bsnpghrepolist.github.io/$1/myoj/e_Note_json.js
+
+#delete it. 
