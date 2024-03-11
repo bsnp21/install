@@ -11,3 +11,5 @@ sudo rm -rf /var/www/html/wdaws
 ./setup_proj_main.sh
 ./setup_proj_obi.sh
 
+# -f: tail to end for debug...
+journalctl -u bsnpa -f 
